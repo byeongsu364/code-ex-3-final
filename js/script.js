@@ -1,9 +1,6 @@
 const navList = document.querySelectorAll('.nav-list li')
 const select = document.querySelectorAll('.select')
 
-let i = 2;
-
-init(i)
 
 function init(q){
     navList[q].classList.add('on')
