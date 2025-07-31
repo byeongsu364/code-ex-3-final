@@ -1,7 +1,6 @@
 const navList = document.querySelectorAll('.nav-list li')
 const select = document.querySelectorAll('.select')
 
-
 function init(q){
     navList[q].classList.add('on')
     select[q].classList.add('active')
@@ -17,7 +16,6 @@ function reset(){
 navList.forEach((nav, index)=>{
     nav.addEventListener('click', (e)=>{
         e.preventDefault()
-        
         reset()
         console.log(index)
         init(index)
